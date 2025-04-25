@@ -1,0 +1,61 @@
+📄 RELATÓRIO FINAL DE PERFORMANCE
+========================================
+
+
+📊 Análise - 10 usuários
+➡️ Tempo médio p90: 1262.00 ms
+➡️ Tempo médio p95: 1430.00 ms
+➡️ Throughput médio: 1.11 req/s
+❌ Total de falhas: 28
+
+🔥 Endpoints com gargalo (p95 > 1000ms ou falhas):
+   - /: p95 = 650 ms | falhas = 28
+   - /celular: p95 = 1600 ms | falhas = 0
+   - /celulares-telefones/celulares-smartphones/celular_PriceRange_1000: p95 = 2600 ms | falhas = 0
+   - /ofertas: p95 = 1200 ms | falhas = 0
+   - /smartphone-samsung-galaxy-a25-5g-256gb-8gb-ram-dual-sim-android-14-azul-escuro-65/p/MLB31498601: p95 = 1100 ms | falhas = 0
+
+----------------------------------------
+
+📊 Análise - 50 usuários
+➡️ Tempo médio p90: 1212.00 ms
+➡️ Tempo médio p95: 1292.00 ms
+➡️ Throughput médio: 5.61 req/s
+❌ Total de falhas: 160
+
+🔥 Endpoints com gargalo (p95 > 1000ms ou falhas):
+   - /: p95 = 670 ms | falhas = 160
+   - /celular: p95 = 1300 ms | falhas = 0
+   - /celulares-telefones/celulares-smartphones/celular_PriceRange_1000: p95 = 2200 ms | falhas = 0
+   - /ofertas: p95 = 1300 ms | falhas = 0
+
+----------------------------------------
+
+📊 Análise - 100 usuários
+➡️ Tempo médio p90: 1176.00 ms
+➡️ Tempo médio p95: 1306.00 ms
+➡️ Throughput médio: 11.36 req/s
+❌ Total de falhas: 355
+
+🔥 Endpoints com gargalo (p95 > 1000ms ou falhas):
+   - /: p95 = 610 ms | falhas = 355
+   - /celular: p95 = 1400 ms | falhas = 0
+   - /celulares-telefones/celulares-smartphones/celular_PriceRange_1000: p95 = 2200 ms | falhas = 0
+   - /ofertas: p95 = 1400 ms | falhas = 0
+
+----------------------------------------
+
+📊 Análise - 500 usuários
+➡️ Tempo médio p90: 1086.00 ms
+➡️ Tempo médio p95: 1388.00 ms
+➡️ Throughput médio: 42.30 req/s
+❌ Total de falhas: 4972
+
+🔥 Endpoints com gargalo (p95 > 1000ms ou falhas):
+   - /: p95 = 470 ms | falhas = 1712
+   - /celular: p95 = 1300 ms | falhas = 1044
+   - /celulares-telefones/celulares-smartphones/celular_PriceRange_1000: p95 = 2200 ms | falhas = 484
+   - /ofertas: p95 = 2100 ms | falhas = 730
+   - /smartphone-samsung-galaxy-a25-5g-256gb-8gb-ram-dual-sim-android-14-azul-escuro-65/p/MLB31498601: p95 = 870 ms | falhas = 1002
+
+----------------------------------------
