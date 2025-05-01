@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  locust_10_users:
+    build: .
+    volumes:
+      - .:/app
+      - ./resultados_locust:/app/resultados  
+    command: locust -f locustfile.py --headless -u 10 -r 1 --run-time 1m --csv=resultados/resultado_10_users
+
+  locust_50_users:
+    build: .
+    volumes:
+      - .:/app
+      - ./resultados_locust:/app/resultados  
+    command: locust -f locustfile.py --headless -u 50 -r 5 --run-time 1m --csv=resultados/resultado_50_users
+
+  locust_100_users:
+    build: .
+    volumes:
+      - .:/app
+      - ./resultados_locust:/app/resultados  
+    command: locust -f locustfile.py --headless -u 100 -r 10 --run-time 1m --csv=resultados/resultado_100_users
+
+  locust_500_users:
+    build: .
+    volumes:
+      - .:/app
+      - ./resultados_locust:/app/resultados  
+    command: locust -f locustfile.py --headless -u 500 -r 10 --run-time 1m --csv=resultados/resultado_500_users
+
+ 

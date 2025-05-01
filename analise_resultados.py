@@ -46,7 +46,6 @@ throughputs = []
 p95s = []
 relatorios = []
 
-# Primeiro: gera os dados
 for u in usuarios:
     arquivo = f"resultado_{u}_users_stats.csv"
     t, p, relatorio = analisar_stats(arquivo, f"{u} usuários")
@@ -54,7 +53,6 @@ for u in usuarios:
     p95s.append(p)
     relatorios.append(relatorio)
 
-# Depois: gera e salva o gráfico
 plt.figure(figsize=(10, 5))
 
 plt.subplot(1, 2, 1)
